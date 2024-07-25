@@ -1,46 +1,46 @@
-/* CSS RESET */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-* {
-  margin: 0;
-}
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-#root,
-#__next {
-  isolation: isolate;
-}
-
 /* FONTS */
 @font-face {
   font-family: norse-bold;
   src: url(./fonts/Norse-Bold.otf);
+}
+* {
+  margin: 0;
+}
+/* CONTAINER */
+.form__container {
+  display: flex;
+}
+
+.form__container-left {
+  background-image: url(./images/tree.jpg);
+  width: 35vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.form__heading {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 25%;
+  padding: 20px;
+}
+
+.form__heading-text {
+  font-family: norse-bold;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+}
+
+.form__heading-image {
+  max-height: 100%;
+}
+
+.form__container-right {
+  background-color: #f9fafc;
 }
