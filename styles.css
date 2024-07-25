@@ -11,6 +11,7 @@
   display: flex;
 }
 
+/* LEFT SIDE */
 .form__container-left {
   background-image: url(./images/tree.jpg);
   width: 35vw;
@@ -41,6 +42,22 @@
   max-height: 100%;
 }
 
+/* RIGHT SIDE */
 .form__container-right {
   background-color: #f9fafc;
+  width: 65vw;
+  height: 100vh;
+}
+
+.form__about {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 150px;
+  max-width: 700px;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  gap: 40px;
 }
