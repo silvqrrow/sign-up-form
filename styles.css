@@ -63,6 +63,9 @@
 }
 
 .form__main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 10px 10px rgba(49, 49, 49, 0.507);
   padding-left: 40px;
   background-color: white;
   font-weight: 500;
@@ -82,7 +85,7 @@ fieldset {
 .form__column {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 /* make the form input name appear above the input */
@@ -93,7 +96,7 @@ fieldset {
 
 /* form input name styling */
 label {
-  color: rgb(65, 65, 65);
+  color: rgb(48, 48, 48);
   font-weight: 500;
   font-size: 0.8em;
   letter-spacing: 2px;
@@ -101,8 +104,22 @@ label {
 
 /* input box styling */
 input {
-  border: 1px solid rgb(209, 209, 209);
+  border: 1px solid #e5e7eb;
   border-radius: 5px;
-  width: 260px;
-  padding-bottom: 10px;
+  width: 220px;
+  height: 20px;
+}
+
+input:focus {
+  border: 1px solid rgb(95, 146, 223); /* Change border color to blue */
+  outline: none; /* Remove default browser outline */
+}
+
+#pwd:invalid,
+#confirm-pwd:invalid {
+  border: 1px solid red;
+}
+
+section {
+  position: absolute;
 }
