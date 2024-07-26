@@ -41,6 +41,7 @@
                     type="text"
                     id="first-name"
                     name="first-name"
+                    maxlength="2"
                     required
                     placeholder="John"
                   />
@@ -51,7 +52,13 @@
                 </p>
                 <p class="form__input" id="pwd">
                   <label for="pwd"> PASSWORD </label>
-                  <input type="password" id="pwd" name="password" required />
+                  <input
+                    type="password"
+                    id="pwd"
+                    name="password"
+                    maxlength="6"
+                    required
+                  />
                 </p>
               </div>
               <div class="form__column">
@@ -62,6 +69,7 @@
                     id="last-name"
                     name="last-name"
                     placeholder="Snow"
+                    maxlength="2"
                     required
                   />
                 </p>
@@ -72,6 +80,7 @@
                     id="phone-number"
                     name="user_phone"
                     placeholder="123-456-7989"
+                    pattern="^(\+?\d{1,3}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?[\d-.\s]{7,10}$"
                     required
                   />
                 </p>
@@ -81,6 +90,7 @@
                     type="password"
                     id="confirm-pwd"
                     name="password_confirm"
+                    maxlength="6"
                     required
                   />
                 </p>
