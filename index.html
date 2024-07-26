@@ -42,6 +42,7 @@
                     id="first-name"
                     name="first-name"
                     required
+                    placeholder="John"
                   />
                 </p>
                 <p class="form__input">
@@ -56,7 +57,13 @@
               <div class="form__column">
                 <p class="form__input">
                   <label for="last-name"> LAST NAME </label>
-                  <input type="text" id="last-name" name="last-name" required />
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Snow"
+                    required
+                  />
                 </p>
                 <p class="form__input">
                   <label for="phone-number"> PHONE NUMBER </label>
@@ -64,6 +71,7 @@
                     type="tel"
                     id="phone-number"
                     name="user_phone"
+                    placeholder="123-456-7989"
                     required
                   />
                 </p>
@@ -83,7 +91,10 @@
             <p>
               <button type="submit">Create Account</button>
             </p>
-            <p class="login">Already have an account? <span>Log in</span></p>
+            <p class="login">
+              Already have an account?
+              <a class="login-prompt" href="#">Login</a>
+            </p>
           </section>
         </form>
       </div>
